@@ -19,24 +19,32 @@ function funcaoQuad(){
     }
 }
 
-function mdc(){
+function divCom(){
     var m = parseInt(document.getElementById("m").value);
     var n = parseInt(document.getElementById("n").value);
     var aux;
-    var resultmdc = document.getElementById("mdc");
+    var result = document.getElementById("result");
+    var i;
+    var rMDC = document.getElementById("mdc");
+    var mdc;
+
     
+
     if(m < n){
         aux = m;
         m = n;
         n = aux; 
     }
 
-    while (n != 0){
-        aux = m; 
-        m = n;
-        n = aux % n;
+    for (i=1; i <= n; i++){
+        if( m%i == 0 && n%i == 0){
+            result.textContent += i;
+            result.textContent += " ";
+            mdc = i;
+        }
     }
-    
-    resultmdc.textContent = m;
+    rMDC.textContent = mdc ;
+
+
 }
 
