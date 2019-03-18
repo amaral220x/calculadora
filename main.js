@@ -17,6 +17,26 @@ function funcaoQuad(){
     result1.textContent = r1;
     result2.textContent = r2;
     }
+}
 
+function mdc(){
+    var m = parseInt(document.getElementById("m").value);
+    var n = parseInt(document.getElementById("n").value);
+    var aux;
+    var resultmdc = document.getElementById("mdc");
+    
+    if(m < n){
+        aux = m;
+        m = n;
+        n = aux; 
+    }
+
+    while (n != 0){
+        aux = m; 
+        m = n;
+        n = aux % n;
+    }
+    
+    resultmdc.textContent = m;
 }
 
