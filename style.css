@@ -1,3 +1,37 @@
 body {
     text-align: center;
+    background-color: #0971B2;
+    font-family: sans-serif;
+}
+
+h1, h2, button{
+    background-color: white;
+    padding: .5em;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+h1:hover, h2:hover, button:hover{
+    background-color: red;
+    border-color: red;
+    transition: .5s;
+}
+
+input {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .5px;
+    /*color: #303030;*/
+    color: black;
+    font-size: 13pt;
+}
+
+p {
+    background-color: #00B233;
+    padding: .5em;
+    border: 2px solid #00B233;
+    border-radius: 5px;
 }

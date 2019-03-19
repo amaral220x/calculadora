@@ -19,6 +19,10 @@ function funcaoQuad(){
     }
 }
 
+function clean(result) {
+    result.textContent = "Resultados: ";
+}
+
 function divCom(){
     var m = parseInt(document.getElementById("m").value);
     var n = parseInt(document.getElementById("n").value);
@@ -27,8 +31,7 @@ function divCom(){
     var i;
     var rMDC = document.getElementById("mdc");
     var mdc;
-
-    
+    clean(result);
 
     if(m < n){
         aux = m;
