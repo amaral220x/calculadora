@@ -12,8 +12,8 @@ function funcaoQuad(){
         result2.textContent= " ";
     }    
     else{  
-    r1= (-b + Math.pow(delta,0.5))/2*a;
-    r2= (-b - Math.pow(delta,0.5))/2*a;
+    r1= (-b + Math.pow(delta,0.5))/(2*a);
+    r2= (-b - Math.pow(delta,0.5))/(2*a);
     result1.textContent = r1;
     result2.textContent = r2;
     }
